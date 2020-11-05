@@ -4,4 +4,34 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<display-name>AdminServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.cognixia.store.servlets.AdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>OrderServlet</servlet-name>
+  	<display-name>OrderServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.cognixia.store.servlets.OrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CatalogServlet</servlet-name>
+  	<display-name>CatalogServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.cognixia.store.servlets.CatalogServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>OrderServlet</servlet-name>
+  	<url-pattern>/OrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CatalogServlet</servlet-name>
+  	<url-pattern>/CatalogServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
